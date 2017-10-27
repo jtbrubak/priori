@@ -48,7 +48,7 @@ end
 def output(records)
   sorts = [first_sort(records), second_sort(records), third_sort(records)]
   sorts.each_with_index do |sort, i|
-    puts "Output #{i + 1}"
+    puts "Output #{i + 1}:"
     sort.each { |record| puts record.values.join(' ') }
     puts "\n"
   end
